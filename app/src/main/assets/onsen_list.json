@@ -2,136 +2,190 @@
   {
     "title": "山川砂むし温泉「砂湯里～さゆり～」",
     "url": "https://www.seika-spc.co.jp/healthy/sayuri-2/",
-    "image": "sayuri"
+    "image": "sayuri",
+    "lat":31.182978,
+    "lng":130.614932
   },
   {
     "title": "砂むし会館「砂楽～さらく～」",
     "url": "http://sa-raku.sakura.ne.jp/",
-    "image": "saraku"
+    "image": "saraku",
+    "lat":31.229815,
+    "lng":130.651953
   },
     {
     "title": "ヘルシーランド露天風呂「たまて箱温泉」",
     "url": "https://www.seika-spc.co.jp/healthy/tamatebako/",
-    "image": "tamatebako"
+    "image": "tamatebako",
+      "lat":31.183170,
+      "lng":130.617379
   },
   {
     "title": "殿様湯",
     "url": "http://www.ibusuki.or.jp/spa/public/tonosamayu/",
-    "image": "tonosamayu"
+    "image": "tonosamayu",
+    "lat":31.256424,
+    "lng":130.626009
   },
   {
     "title": "弥次ヶ湯温泉",
     "url": "http://www.ibusuki.or.jp/spa/public/yajigayu/",
-    "image": "yajigayu"
+    "image": "yajigayu",
+    "lat":31.248987,
+    "lng":130.637553
   },
   {
     "title": "吉乃湯",
     "url": "http://cgi2.synapse.ne.jp/~yoshinoyu/p1.html",
-    "image": "yoshinoyu"
+    "image": "yoshinoyu",
+    "lat":31.230831,
+    "lng":130.647056
   },
   {
     "title": "村之湯温泉",
     "url": "http://www.ibusuki.or.jp/spa/public/muranoyu/",
-    "image": "muranoyu"
+    "image": "muranoyu",
+    "lat":31.244439,
+    "lng":130.643889
   },
   {
     "title": "家族温泉野の香",
     "url": "http://www.nonoka-onsen.com/",
-    "image": "izuminonoka"
+    "image": "izuminonoka",
+    "lat":31.249418,
+    "lng":130.619630
   },
   {
     "title": "松元温泉 玉利浴場",
     "url": "http://www.ibusuki.or.jp/spa/public/matsumoto/",
-    "image": "tamariyokujou"
+    "image": "tamariyokujou",
+    "lat":31.247385,
+    "lng":130.632148
   },
   {
     "title": "指宿こころの湯",
     "url": "http://www.ibusukikokoro.jp/",
-    "image": "kokoronoyu"
+    "image": "kokoronoyu",
+    "lat":31.254544,
+    "lng":130.650769
   },
   {
     "title": "河原湯温泉(こらんゆ)",
     "url": "http://www.ibusuki.or.jp/spa/public/koranyu/",
-    "image": "koranyu"
+    "image": "koranyu",
+    "lat":31.257378,
+    "lng":130.622215
   },
   {
     "title": "区営鰻温泉",
     "url": "http://www.ibusuki.or.jp/spa/public/unagi/",
-    "image": "unagi"
+    "image": "unagi",
+    "lat":31.227883,
+    "lng":130.611223
   },
   {
     "title": "美肌の湯 徳光温泉",
     "url": "http://www.ibusuki.or.jp/spa/public/tokkou/",
-    "image": "tokumitsu"
+    "image": "tokumitsu",
+    "lat":31.179504,
+    "lng":130.591504
   },
   {
     "title": "レジャーセンターかいもん",
     "url": "http://www.ibusuki.or.jp/spa/public/leisure/",
-    "image": "kaimon"
+    "image": "kaimon",
+    "lat":31.176962,
+    "lng":130.563308
   },
   {
     "title": "うなぎ温泉松前",
     "url": "http://www.ibusuki.or.jp/spa/public/matsumae/",
-    "image": "matsumae"
+    "image": "matsumae",
+    "lat":31.227744,
+    "lng":130.611281
   },
   {
     "title": "ヘルシーランド温泉保養館",
     "url": "http://www.seika-spc.co.jp/healthy/",
-    "image": "hoyoukan"
+    "image": "hoyoukan",
+    "lat":31.185185,
+    "lng":130.617803
   },
   {
     "title": "東郷温泉",
     "url": "http://www.ibusuki.or.jp/spa/public/tougou/",
-    "image": "tougou"
+    "image": "tougou",
+    "lat":31.244510,
+    "lng":130.643993
   },
   {
     "title": "浜児ヶ水区営温泉",
     "url": "http://www.ibusuki.or.jp/spa/public/hamachogamizu/",
-    "image": "hamajigamizukuei"
+    "image": "hamajigamizukuei",
+    "lat":31.179895,
+    "lng":130.594249
   },
   {
     "title": "いぶすき元湯温泉",
     "url": "http://www.ibusuki.or.jp/spa/public/motoyu/",
-    "image": "motoyu"
+    "image": "motoyu",
+    "lat":31.230159,
+    "lng":130.650545
   },
   {
     "title": "指宿いわさきホテル",
     "url": "http://ibusuki.iwasakihotels.com/",
-    "image": "iwasaki"
+    "image": "iwasaki",
+    "lat":31.221851,
+    "lng":130.654389
   },
   {
     "title": "指宿フェニックスホテル",
     "url": "http://www.phoenixhotel.co.jp/",
-    "image": "phoenix"
+    "image": "phoenix",
+    "lat":31.217885,
+    "lng":130.644026
   },
   {
     "title": "指宿コーラルビーチホテル",
     "url": "http://www.coralbeach.jp/",
-    "image": "coralbeach"
+    "image": "coralbeach",
+    "lat":31.234709,
+    "lng":130.649542
   },
   {
     "title": "こらんの湯 錦江楼",
     "url": "http://www.kinkouroh.co.jp/",
-    "image": "kinkouroh"
+    "image": "kinkouroh",
+    "lat":31.273043,
+    "lng":130.625809
   },
   {
     "title": "指宿ベイヒルズ HOTEL&SPA",
     "url": "http://www.medipolis-tenju.com/",
-    "image": "bayhills"
+    "image": "bayhills",
+    "lat":31.234633,
+    "lng":130.612470
   },
   {
     "title": "休暇村 指宿",
     "url": "http://www.qkamura.or.jp/ibusuki",
-    "image": "kyukamura"
+    "image": "kyukamura",
+    "lat":31.260136,
+    "lng":130.659896
   },
   {
     "title": "旅館 可久大",
     "url": "http://www.ibusuki.or.jp/spa/one-day/post-27/",
-    "image": "kakuhiro"
+    "image": "kakuhiro",
+    "lat":31.235675,
+    "lng":130.649411
   },
   {
     "title": "ペンション 菜の花館",
     "url": "http://nanohanakan.com/",
-    "image": "nanohanakan"
+    "image": "nanohanakan",
+    "lat":31.172484,
+    "lng":130.587461
   }
 ]
