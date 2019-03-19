@@ -45,7 +45,10 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         mMap.moveCamera(CameraUpdateFactory.newCameraPosition(cameraPos));
 
         LatLng sayuri = new LatLng(31.182978, 130.614932);
-        mMap.addMarker(new MarkerOptions().position(sayuri).title("Marker in sayuri"));
+        mMap.addMarker(new MarkerOptions().position(sayuri).title("山川砂むし温泉「砂湯里～さゆり～」"));
+
+        LatLng saraku = new LatLng(31.229815, 130.651953);
+        mMap.addMarker(new MarkerOptions().position(saraku).title("砂むし会館「砂楽～さらく～」"));
 
 
 
