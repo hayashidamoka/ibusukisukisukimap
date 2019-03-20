@@ -10,21 +10,38 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
-        android:src="@drawable/bayhills"
-        />
+        android:src="@drawable/bayhills" />
+
+    <TextView
+        android:id="@+id/urlTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="http://www.ibusuki.or.jp/spa/public/hamachogamizu/"
+        android:layout_centerInParent="true"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:shadowColor="@color/colorAccent"
+        android:shadowDx="5"
+        android:shadowDy="5"
+        android:shadowRadius="2"/>
 
     <TextView
         android:id="@+id/onsenNameTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="山川砂むし温泉「砂湯里～さゆり～」"
-        android:layout_centerInParent="true" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="https://www.seika-spc.co.jp/healthy/sayuri-2/"
+        android:layout_alignTop="@+id/heartImageView"
+        android:layout_marginTop="150dp"
+        android:text="ヘルシーランド露天風呂「たまて箱温泉」"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:fontFamily="arial unicode ms"
         android:layout_centerHorizontal="true"
-        android:layout_below="@+id/onsenNameTextView"/>
+        android:textColor="@color/white"
+        android:shadowColor="@color/colorAccent"
+        android:shadowDx="5"
+        android:shadowDy="5"
+        android:shadowRadius="2"/>
+
 
 </RelativeLayout>
