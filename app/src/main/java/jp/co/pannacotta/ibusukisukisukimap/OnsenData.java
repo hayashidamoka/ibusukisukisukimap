@@ -6,4 +6,5 @@ public class OnsenData {
     public String image;
     public double lat;
     public double lng;
+    public String markerId;
 }

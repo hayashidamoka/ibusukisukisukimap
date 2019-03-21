@@ -3,6 +3,8 @@ package jp.co.pannacotta.ibusukisukisukimap;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
 import android.view.View;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
@@ -26,6 +28,7 @@ import java.util.List;
 public class MapsActivity extends FragmentActivity implements OnMapReadyCallback {
 
     private GoogleMap mMap;
+    private List<OnsenData> onsenDataList;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -54,6 +57,21 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             @Override
             public View getInfoWindow(Marker marker) {
                 View view = getLayoutInflater().inflate(R.layout.infowindow_onsen, null);
+                TextView onsenNameTextView = view.findViewById(R.id.onsenNameTextView);
+                TextView urlTextView = view.findViewById(R.id.urlTextView);
+                ImageView heartImageView = view.findViewById(R.id.heartImageView);
+                String markerId = marker.getId();
+
+                for(int i=0; i<onsenDataList.size(); i++){
+                    OnsenData onsenData = onsenDataList.get(i);
+                    if(onsenData.markerId.equals(markerId)){
+                        onsenNameTextView.setText(onsenData.title);
+                        urlTextView.setText(onsenData.url);
+                        heartImageView.setImageResource(getResources().getIdentifier(onsenData.image, "drawable", getPackageName()));
+                    }
+                }
+
+
                 return view;
             }
 
@@ -79,14 +97,15 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         }
 
         JsonReader jsonReader = new JsonReader( new InputStreamReader( inputStream ) );
-        List<OnsenData> onsenDataList = new Gson().fromJson(jsonReader, new TypeToken<ArrayList<OnsenData>>() {
+        onsenDataList = new Gson().fromJson(jsonReader, new TypeToken<ArrayList<OnsenData>>() {
         }.getType());
 
         for(int i=0; i< onsenDataList.size(); i++ ){
-            onsenDataList.get(i);
-                    LatLng latLng = new LatLng(onsenDataList.get(i).lat,onsenDataList.get(i).lng);
-                    String title = onsenDataList.get(i).title;
-            mMap.addMarker(new MarkerOptions().position(latLng).title(title));
+            OnsenData onsenData = onsenDataList.get(i);
+                    LatLng latLng = new LatLng(onsenData.lat,onsenData.lng);
+                    String title = onsenData.title;
+            Marker marker = mMap.addMarker(new MarkerOptions().position(latLng).title(title));
+            onsenData.markerId = marker.getId();
         }
     }
 }
