@@ -10,6 +10,8 @@ import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
+import com.google.android.gms.maps.model.BitmapDescriptor;
+import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.CameraPosition;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.Marker;
@@ -70,8 +72,6 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                         heartImageView.setImageResource(getResources().getIdentifier(onsenData.image, "drawable", getPackageName()));
                     }
                 }
-
-
                 return view;
             }
 
@@ -85,7 +85,6 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         LatLng ibusukiCamera = new LatLng(31.222541, 130.604898);
         CameraPosition cameraPos = new CameraPosition.Builder().target(ibusukiCamera).zoom(12.0f).build();
         mMap.moveCamera(CameraUpdateFactory.newCameraPosition(cameraPos));
-
         InputStream inputStream = null;
 
         try{
