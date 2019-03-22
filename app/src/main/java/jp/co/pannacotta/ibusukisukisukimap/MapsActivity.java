@@ -106,7 +106,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             OnsenData onsenData = onsenDataList.get(i);
                     LatLng latLng = new LatLng(onsenData.lat,onsenData.lng);
                     String title = onsenData.title;
-            Marker marker = mMap.addMarker(new MarkerOptions().position(latLng).title(title));
+            Marker marker = mMap.addMarker(new MarkerOptions(icon).position(latLng).title(title));
             onsenData.markerId = marker.getId();
         }
     }
