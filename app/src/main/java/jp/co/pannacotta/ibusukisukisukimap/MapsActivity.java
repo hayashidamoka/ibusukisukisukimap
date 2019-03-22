@@ -85,6 +85,9 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         LatLng ibusukiCamera = new LatLng(31.222541, 130.604898);
         CameraPosition cameraPos = new CameraPosition.Builder().target(ibusukiCamera).zoom(12.0f).build();
         mMap.moveCamera(CameraUpdateFactory.newCameraPosition(cameraPos));
+        MarkerOptions options = new MarkerOptions();
+        BitmapDescriptor icon = BitmapDescriptorFactory.fromResource(R.drawable.onsen_icon);
+        options.icon(icon);
         InputStream inputStream = null;
 
         try{
