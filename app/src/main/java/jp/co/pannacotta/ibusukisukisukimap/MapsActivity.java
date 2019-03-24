@@ -1,7 +1,10 @@
 package jp.co.pannacotta.ibusukisukisukimap;
 
+import android.net.Uri;
 import android.os.Bundle;
+import android.support.customtabs.CustomTabsIntent;
 import android.support.v4.app.FragmentActivity;
+import android.support.v4.content.ContextCompat;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -106,8 +109,22 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             OnsenData onsenData = onsenDataList.get(i);
                     LatLng latLng = new LatLng(onsenData.lat,onsenData.lng);
                     String title = onsenData.title;
-            Marker marker = mMap.addMarker(new MarkerOptions().icon(icon).position(latLng).title(title));
+                    String url = onsenData.url;
+            Marker marker = mMap.addMarker(new MarkerOptions().icon(icon).position(latLng).title(title).snippet(url));
             onsenData.markerId = marker.getId();
         }
+
+        mMap.setOnInfoWindowClickListener(new GoogleMap.OnInfoWindowClickListener() {
+            @Override
+            public void onInfoWindowClick(Marker marker) {
+                CustomTabsIntent.Builder builder = new CustomTabsIntent.Builder();
+                final CustomTabsIntent tabsIntent = builder
+                        .setShowTitle(false)
+                        .setToolbarColor(ContextCompat.getColor(MapsActivity.this,R.color.colorPrimary))
+                        .enableUrlBarHiding().build();
+                tabsIntent.launchUrl(MapsActivity.this, Uri.parse(marker.getSnippet()));
+
+            }
+        });
     }
 }
